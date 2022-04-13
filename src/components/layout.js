@@ -1,19 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
-
-const listStyles = {
-  listStyleType: none,
-};
-
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-};
+import { container } from "./layout.module.css";
 
 const Layout = ({ pageTitle, children }) => {
   return (
-    <div>
+    <div className={container}>
       <title>{pageTitle}</title>
       <nav>
         <ul style={listStyles}>
